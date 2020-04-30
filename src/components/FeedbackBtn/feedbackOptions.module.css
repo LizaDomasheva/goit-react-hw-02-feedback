@@ -1,0 +1,55 @@
+.title {
+    padding: 30px;
+    font-size: 30px;
+}
+
+.button {
+    outline: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #272726;
+    background: rgb(241, 245, 244);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.button:hover {
+    box-shadow: 0 15px 20px rgba(68, 70, 69, 0.4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.buttonGood {
+    composes: button
+}
+
+.buttonGood:hover {
+    background: rgb(231, 62, 62);
+}
+
+.buttonNeutral {
+    composes: button
+}
+
+.buttonNeutral:hover {
+    background: rgb(32, 167, 201);
+}
+
+.buttonBad {
+    composes: button
+}
+
+.buttonBad:hover {
+    background: rgb(66, 66, 66);
+}
+
+

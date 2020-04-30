@@ -1,0 +1,17 @@
+.title {
+    padding: 30px;
+    font-size: 28px;
+}
+
+.list {
+    padding: 0 30px;
+    font-size: 18px;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.item:nth-last-child(1) {
+    margin-bottom: 0;
+}
