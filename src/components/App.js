@@ -8,8 +8,6 @@ export default class App extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
-    total: 0,
-    feedback: 0,
   };
 
   handleClick = e => {
@@ -17,7 +15,6 @@ export default class App extends Component {
     this.setState(prev => ({
       [name]: prev[name] + 1,
     }));
-    this.countPositiveFeedbackPercentage();
   };
 
   countTotalFeedback = () => {
@@ -40,8 +37,8 @@ export default class App extends Component {
           good={good}
           neutral={neutral}
           bad={bad}
-          countTotalFeedback={this.countTotalFeedback()}
-          countPositiveFeedbackPercentage={this.countPositiveFeedbackPercentage()}
+          total={this.countTotalFeedback()}
+          positivePercentage={this.countPositiveFeedbackPercentage()}
         />
       </div>
     );

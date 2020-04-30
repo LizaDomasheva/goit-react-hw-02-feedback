@@ -8,18 +8,18 @@ export function SectionTitle({
   good,
   neutral,
   bad,
-  countTotalFeedback,
-  countPositiveFeedbackPercentage,
+  total,
+  positivePercentage,
 }) {
   return (
     <>
-      <FeedbackOptions handleClick={handleClick} />
+      <FeedbackOptions onLeaveFeedback={handleClick} />
       <Statistics
         good={good}
         neutral={neutral}
         bad={bad}
-        countTotalFeedback={countTotalFeedback}
-        countPositiveFeedbackPercentage={countPositiveFeedbackPercentage}
+        total={total}
+        positivePercentage={positivePercentage}
       />
     </>
   );
@@ -30,6 +30,6 @@ SectionTitle.propTypes = {
     good: PropTypes.number,
     neutral: PropTypes.number,
     bad: PropTypes.number,
-    countTotalFeedback: PropTypes.number,
-    countPositiveFeedbackPercentage: PropTypes.number
+    total: PropTypes.number,
+    positivePercentage: PropTypes.number
   };
